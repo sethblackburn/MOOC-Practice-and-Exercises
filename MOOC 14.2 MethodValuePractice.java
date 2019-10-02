@@ -1,3 +1,5 @@
+// MOOC 14.2; https://materiaalit.github.io/2013-oo-programming/part1/week-3/
+
 public class MethodValuePractice {
     public static void main(String[] args) {
         String first = method();
