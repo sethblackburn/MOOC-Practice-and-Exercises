@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class MethodsInMethodsThree {
+public class MethodsInMethods3 {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         System.out.print("Enter a number: ");
