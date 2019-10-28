@@ -1,4 +1,5 @@
-// MOOC 8.5 Excercise 21; https://materiaalit.github.io/2013-oo-programming/part1/week-1/; 23 Sept 2019; first program to contain of multiple checks in one if statement
+// MOOC 8.5 Excercise 21; https://materiaalit.github.io/2013-oo-programming/part1/week-1/; 23 Sept 2019
+// first program to contain of multiple checks in one if statement
 
 import java.util.Scanner;
 
