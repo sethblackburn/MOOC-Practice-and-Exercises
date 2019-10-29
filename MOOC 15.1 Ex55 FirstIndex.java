@@ -14,7 +14,7 @@ public class FirstIndex {
 
         int index = firstWord.indexOf(secondWord);
 
-        if (index >= 0 && index <= firstWord.length()) {
+        if (index >= 0) {
             System.out.print("The word '" + secondWord + "' is found in the word '" + firstWord + "'.");
         } else if (index < 0) {
             System.out.print("The word '" + secondWord + "' is not found in the word '" + firstWord + "'.");
