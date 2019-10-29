@@ -12,7 +12,7 @@ public class NameReverserTwo {
 
         reverser(text);
     }
-    public static void reverser(String text) {
+    public static void reverse(String text) {
         int counter = 1;
         while (counter <= text.length()) {
             System.out.print(text.charAt(text.length() - counter));
