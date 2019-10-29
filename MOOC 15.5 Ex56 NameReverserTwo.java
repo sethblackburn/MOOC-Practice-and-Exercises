@@ -10,7 +10,7 @@ public class NameReverserTwo {
         System.out.print("Type a text: ");
         String text = reader.nextLine();
 
-        reverser(text);
+        reverse(text);
     }
     public static void reverse(String text) {
         int counter = 1;
