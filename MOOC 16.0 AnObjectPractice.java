@@ -1,6 +1,6 @@
-// MOOC 16.0 ObjectPractice; 30 Oct 2019
+// MOOC 16.0 AnObjectPractice; 30 Oct 2019
 
-public class ObjectPractice {
+public class AnObjectPractice {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 
