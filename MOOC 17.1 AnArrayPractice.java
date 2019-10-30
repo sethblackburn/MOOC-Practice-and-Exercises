@@ -15,18 +15,18 @@ public class AnArrayPractice {
         teachers.add("Martin");
         teachers.add("Matt");
 
-        //At this point, Anthony is 0, Barto is 1, Paul is 2, John is 3, Martin is 4, Matt is 5.
+        //At this point, Anthony is 0, Barto is 1, Paul is 2, John is 3, Martin is 4, and Matt is 5.
 
         System.out.println("the number of teachers " + teachers.size() );
 
         System.out.println("first teacher on the list " + teachers.get(0));
         System.out.println("third teacher on the list " + teachers.get(2));
 
-        //.get() extracts a string from this string array analogous to the way .charAt() extract a character from a String
+        //.get() extracts a string from this string array, analogous to the way .charAt() extracts a character from a String
 
         teachers.remove("Barto");
 
-        //It wasn't clear on MOOC whether this left a "hole" in the array or if it automatically re-ordered the array.
+        //It wasn't clear on MOOC whether .remove() left a "hole" in the array or if it automatically re-ordered the array.
         //I suspect that it would automatically re-order, but I experimented below to be sure.
 
         if (teachers.contains("Barto")) {
