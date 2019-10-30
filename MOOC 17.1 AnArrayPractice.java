@@ -1,4 +1,4 @@
-//MOOC 17.1 ArrayPractice; 30 Oct 2019
+//MOOC 17.1 Array Practice; 30 Oct 2019
 
 import java.util.ArrayList;
 
