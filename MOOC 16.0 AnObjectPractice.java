@@ -1,4 +1,4 @@
-// MOOC 16.0 AnObjectPractice; 30 Oct 2019
+// MOOC 16.0 Object Practice; 30 Oct 2019
 
 public class AnObjectPractice {
     public static void main(String[] args) {
