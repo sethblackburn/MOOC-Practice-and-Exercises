@@ -6,24 +6,25 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class FirstArray {
+public class Main {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         ArrayList<String> words = new ArrayList<String>();
 
+        System.out.println();
         System.out.println("Let's enter a series of words. Type a word and press ENTER or press ENTER on a blank entry to end the series.");
-
-        String word = "placeholder";
+        System.out.println();
 
         while (true) {
             System.out.print("Type a word: ");
-            word = reader.nextLine();
+            String word = reader.nextLine();
                 if (word.isEmpty()) {
                 break;
                 }
             words.add(word);
         }
 
+        System.out.println();
         System.out.println("You typed the following words: ");
 
         for (String list : words) {
