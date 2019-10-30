@@ -26,7 +26,7 @@ public class AnArrayPractice {
 
         teachers.remove("Barto");
 
-        //It wasn't clear on MOOC whether this left a "hole" in the array if it automatically re-ordered the array.
+        //It wasn't clear on MOOC whether this left a "hole" in the array or if it automatically re-ordered the array.
         //I suspect that it would automatically re-order, but I experimented below to be sure.
 
         if (teachers.contains("Barto")) {
