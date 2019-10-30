@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class StringRecognitionPractice {
+public class AStringRecognitionPractice {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 
