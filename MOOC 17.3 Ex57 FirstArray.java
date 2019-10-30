@@ -6,7 +6,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class Main {
+public class FirstArray {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         ArrayList<String> words = new ArrayList<String>();
