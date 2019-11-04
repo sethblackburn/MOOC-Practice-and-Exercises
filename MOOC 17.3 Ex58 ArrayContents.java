@@ -1,6 +1,6 @@
 //MOOC 17.3 Ex58; https://materiaalit.github.io/2013-oo-programming/part1/week-3/; 30 Oct 2019
 
-//This one gave me a blank at first, because I hadn't used .contains() beforehand.  There are lots of new methods and
+//This one had me drawing a blank at first, because I hadn't used .contains() beforehand.  There are lots of new methods and
 //commands in short order at this stage of the MOOC course.
 
 import java.util.Scanner;
@@ -15,7 +15,7 @@ public class Main {
         System.out.println("Let's enter a series of words.");
         System.out.println();
 
-//Had to be carefully re-arranging the loop from the previous exercise. The order of execution was key.
+//Had to be careful in re-arranging the loop from the previous exercise.
 
         while (true) {
             System.out.print("Type a word: ");
