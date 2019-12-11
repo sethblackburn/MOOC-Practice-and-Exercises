@@ -1,0 +1,33 @@
+//MOOC 17.4 Ex60 Alphabetize; https://materiaalit.github.io/2013-oo-programming/part1/week-3/
+
+//Simple redo of Exercise 59, just replaced "reverse" with "sort".
+
+import java.util.Collections;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class Aplphabetize {
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        ArrayList<String> words = new ArrayList<String>();
+
+        System.out.println();
+        System.out.println("Let's enter a series of words.");
+        System.out.println();
+
+        while (true) {
+            System.out.print("Type a word: ");
+            String word = reader.nextLine();
+                if (word.isEmpty()) {
+                    break;
+                }
+            words.add(word);
+        }
+
+        Collections.sort(words);
+
+        for (String list : words) {
+            System.out.println(list);
+        }
+    }
+}
