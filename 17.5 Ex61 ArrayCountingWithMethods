@@ -2,8 +2,6 @@
 
 // Methods are really starting to make sense now.
 
-//import java.util.Collections;
-//import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Main {
