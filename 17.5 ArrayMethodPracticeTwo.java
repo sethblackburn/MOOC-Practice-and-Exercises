@@ -1,4 +1,4 @@
-//MOOC 17.5 ArrayPracticeTwo; https://materiaalit.github.io/2013-oo-programming/part1/week-3/; 11 Dec 2019
+//MOOC 17.5 ArrayMethodPracticeTwo; https://materiaalit.github.io/2013-oo-programming/part1/week-3/; 11 Dec 2019
 
 //Okay, so this is started to make sense.  When you create a method, it has its own variable in its creation.
 //Then, when you call that method, you input a value which defines that variable within that method.  Here, the same
@@ -7,7 +7,7 @@
 
 import java.util.ArrayList;
 
-public class Main {
+public class ArrayMethodPracticeTwo {
     public static void main(String[] args) {
         ArrayList<String> languagesList = new ArrayList<String>();
         languagesList.add("Java");
