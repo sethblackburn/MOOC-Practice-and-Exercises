@@ -1,0 +1,26 @@
+// MOOC 17.7; https://materiaalit.github.io/2013-oo-programming/part1/week-3/; 12 Dec 2019
+
+// Convoluted, but necessary I think. There's a lot to take in regarding for-each and arrays.
+
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> numbers = addNumbersToList(3, 5, 2);
+
+        for (int number : numbers) {
+            System.out.println( number );
+        }
+
+    }
+
+    public static ArrayList<Integer> addNumbersToList(int num1, int num2, int num3) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+
+        list.add(num1);
+        list.add(num2);
+        list.add(num3);
+
+        return list;
+    }
+}
