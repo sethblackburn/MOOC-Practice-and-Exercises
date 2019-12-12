@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<String> brothers = new ArrayList<String>();
+        ArrayList<String> brothers = new ArrayList<>();
         brothers.add("Dick");
         brothers.add("Henry");
         brothers.add("Michael");
@@ -25,7 +25,7 @@ public class Main {
         System.out.println(brothers);
     }
 
-    public static void removeLast (ArrayList<String> stringArrayInput) {
+    private static void removeLast (ArrayList<String> stringArrayInput) {
         stringArrayInput.remove(3);
     }
 }
