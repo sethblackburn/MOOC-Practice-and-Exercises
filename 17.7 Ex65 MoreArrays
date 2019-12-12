@@ -1,0 +1,38 @@
+//MOOC 17.7 Ex65; https://materiaalit.github.io/2013-oo-programming/part1/week-3/; 12 Dec 2019
+
+//This one was tough.  That I got it to compile and run on the second try was a huge surprise.
+
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hallo");
+        list.add("Moi");
+        list.add("Benvenuto!");
+        list.add("badger badger badger badger");
+
+        ArrayList<Integer> lengths = lengths(list);
+
+//This part is strange. I can get the same result by deleting the line above,
+//and changing "lengths" to "lengths(list)" in the line below. Yet the exercise tells me to include the line above. Why?
+
+        System.out.println("The lengths of the Strings: " + lengths);
+    }
+
+    public static ArrayList<Integer> lengths (ArrayList<String> list) {
+        ArrayList<Integer> process = new ArrayList<>();
+        String extracted;
+        int measure;
+        int count = 0;
+        int limit = list.size();
+
+        while (count < limit) {
+            extracted = list.get(count);
+            measure = extracted.length();
+            process.add(measure);
+            count++;
+        }
+        return process;
+    }
+}
