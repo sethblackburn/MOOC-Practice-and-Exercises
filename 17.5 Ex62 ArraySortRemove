@@ -1,0 +1,31 @@
+//MOOC 17.5 Ex62; https://materiaalit.github.io/2013-oo-programming/part1/week-3/; 12 Dec 2019
+
+//This was a strange one.  The way that the exercise instructed to do this one was with brothers.sort(); but that didn't
+//work.  I imported the Collections utility and instead used Collections.sort(brothers); and it gave me the output
+//that the exercise demanded.
+
+import java.util.Collections;
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> brothers = new ArrayList<String>();
+        brothers.add("Dick");
+        brothers.add("Henry");
+        brothers.add("Michael");
+        brothers.add("Bob");
+
+        System.out.println("Brothers: ");
+        System.out.println(brothers);
+
+        Collections.sort(brothers);
+
+        removeLast(brothers);
+
+        System.out.println(brothers);
+    }
+
+    public static void removeLast (ArrayList<String> stringArrayInput) {
+        stringArrayInput.remove(3);
+    }
+}
