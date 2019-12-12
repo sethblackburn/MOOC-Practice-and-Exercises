@@ -1,0 +1,33 @@
+// MOOC 17.6 Ex64; https://materiaalit.github.io/2013-oo-programming/part1/week-3/; 12 Dec 2019
+
+// A mostly redundant retread of Exercise 63, though it did teach me the hard way that you can't use a double with
+// .get(), so that was good.
+
+import java.util.ArrayList;
+
+public class AveragingAnArray {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(3);
+        list.add(2);
+        list.add(7);
+        list.add(2);
+
+        System.out.println("The average: " + sum(list));
+    }
+
+    public static double sum(ArrayList<Integer> list) {
+        int count = 0;
+        double total = 0;
+        double limit = list.size();
+
+        while (count < limit) {
+            total += list.get(count);
+            count++;
+        }
+
+        total = total / limit;
+
+        return total;
+    }
+}
