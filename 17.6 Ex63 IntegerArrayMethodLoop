@@ -1,0 +1,34 @@
+// MOOC 17.5 Ex63; https://materiaalit.github.io/2013-oo-programming/part1/week-3/; 12 Dec 2019
+
+// I liked this one. Loops are fun to work with. Having a loop embedded in a method so you can call that loop repeatedly
+// is even more fun to work with.
+
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(3);
+        list.add(2);
+        list.add(7);
+        list.add(2);
+
+        System.out.println("The sum: " + sum(list));
+
+        list.add(10);
+
+        System.out.println("The sum: " + sum(list));
+    }
+
+    public static int sum(ArrayList<Integer> list) {
+        int count = 0;
+        int total = 0;
+
+        while (count < list.size()) {
+            total += list.get(count);
+            count++;
+        }
+
+        return total;
+    }
+}
