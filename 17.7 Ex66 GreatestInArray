@@ -1,0 +1,32 @@
+// MOOC 17.7; Exercise 66; https://materiaalit.github.io/2013-oo-programming/part1/week-3/
+
+// Interesting loop solution to the restriction on Math.max (it can only compare two values).  I wonder if there is
+// a more efficient way, but based on the flow of the exercises, I'm fairly certain that this is the solution that MOOC
+// wanted me to come up with.
+
+import java.util.ArrayList;
+
+public class GreatestInArray {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(3);
+        list.add(2);
+        list.add(7);
+        list.add(2);
+
+        System.out.println("The greatest number is: " + greatest(list));
+    }
+
+    private static int greatest(ArrayList<Integer> list) {
+        int count = 0;
+        int greatest = list.get(0);
+        int limit = list.size();
+
+        while (count < limit) {
+            greatest = Math.max( greatest, list.get(count) );
+            count++;
+        }
+
+        return greatest;
+    }
+}
