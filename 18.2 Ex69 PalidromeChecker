@@ -1,0 +1,43 @@
+// MOOC 18.2 Ex69; https://materiaalit.github.io/2013-oo-programming/part1/week-3/#e69; 09 Jan 2019
+
+// This was a bit tricky.  First I had to figure out the two separate counters in the loop.  Also I had to
+// research to figure out that a simple += could be used to add characters to the end of a String.  If that was
+// something that was covered earlier in MOOC, I neglected to get it into my Java Notes Google Doc... :/
+
+import java.util.Scanner;
+
+public class PalidromeChecker {
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+
+        System.out.print("Type a text: ");
+        String text = reader.nextLine();
+        if (palindrome(text)) {
+            System.out.println("The text is a palindrome!");
+        } else {
+            System.out.println("The text is not a palindrome!");
+        }
+    }
+
+// I was able to recycle the loop from the "reverse" method in Exercise 56.  I ended up altering so much that it
+// didn't saved a ton of writing time, but it did save me the trouble having to figure it out again.  And the wonders
+// of GitHub means I don't have to have eidetic memory to bring that past solution back.
+
+    public static boolean palindrome(String text) {
+        int counter = 0;
+        int extractor = 1;
+        String paliCheck = "";
+
+        while (counter <= (text.length() - 1)) {
+            paliCheck += text.charAt(text.length() - extractor);
+            counter++;
+            extractor++;
+        }
+
+        if (text.equalsIgnoreCase(paliCheck)) {
+            return true;
+        }
+
+        return false;
+    }
+}
