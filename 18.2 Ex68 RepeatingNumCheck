@@ -1,0 +1,49 @@
+// MOOC 18.2 Ex68; https://materiaalit.github.io/2013-oo-programming/part1/week-3/; 09 Jan 2019
+
+// Getting the "for" statement to work just right was a bit tricky.  This was the first time I can remember where I
+// was brushing up against another schedule commitment, had to leave this one undone, and then figured it out in my
+// head about an hour later.  I've heard other coders talk about this sort of thing.  It's an interesting feeling.
+
+//import java.util.Collections;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        list.add(3);
+        list.add(2);
+        list.add(7);
+        list.add(2);
+
+        System.out.print("Type a number: ");
+        int number = reader.nextInt();
+
+        if (moreThanOnce(list, number)) {
+            System.out.println(number + " appears more than once.");
+        } else {
+            System.out.println(number + " does not appear more than once.");
+        }
+    }
+
+// I'm starting to get a bit bothered by how many of these exercises leave such wide open possibilities of error due to
+// user input. Yeah I know that's not the POINT of these programs, but still...
+
+    public static boolean moreThanOnce(ArrayList<Integer> list, int number) {
+        int count = 0;
+
+        for (int check : list) {
+            if (check == number) {
+                count++;
+            }
+        }
+
+        if (count > 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
