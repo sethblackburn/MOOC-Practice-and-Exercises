@@ -1,0 +1,47 @@
+// MOOC 19.0 Ex 71; https://materiaalit.github.io/2013-oo-programming/part1/week-4/#e71; 13 Jan 2020
+
+// Yep, instructions are definitely getting more hands-off.  Much appreciated, MOOC.
+
+import java.util.ArrayList;
+
+public class SmartArrayCombine {
+    public static void main(String[] args) {
+        ArrayList<Integer> list1 = new ArrayList<Integer>();
+        ArrayList<Integer> list2 = new ArrayList<Integer>();
+
+        list1.add(1);
+        list1.add(3);
+        list1.add(5);
+        list1.add(7);
+        list1.add(9);
+
+        list2.add(1);
+        list2.add(2);
+        list2.add(3);
+        list2.add(4);
+        list2.add(5);
+        list2.add(6);
+        list2.add(7);
+        list2.add(8);
+        list2.add(9);
+
+        smartCombine(list1, list2);
+
+        System.out.println(list1); // prints [1, 3, 5, 7, 9, 2, 4, 6, 8]
+
+        System.out.println(list2); // prints [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    }
+
+    public static void smartCombine(ArrayList<Integer> first, ArrayList<Integer> second) {
+        int count = 0;
+
+        while (count < second.size()) {
+            if (first.contains(second.get(count))) {
+                count++;
+            } else {
+                first.add(second.get(count));
+                count++;
+            }
+        }
+    }
+}
