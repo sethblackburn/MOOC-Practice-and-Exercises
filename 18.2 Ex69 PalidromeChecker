@@ -1,4 +1,4 @@
-// MOOC 18.2 Ex69; https://materiaalit.github.io/2013-oo-programming/part1/week-3/#e69; 09 Jan 2019
+// MOOC 18.2 Ex69; https://materiaalit.github.io/2013-oo-programming/part1/week-3/#e69; 09 Jan 2020
 
 // This was a bit tricky.  First I had to figure out the two separate counters in the loop.  Also I had to
 // research to figure out that a simple += could be used to add characters to the end of a String.  If that was
