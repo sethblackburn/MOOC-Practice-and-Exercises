@@ -1,0 +1,36 @@
+// MOOC 19.0 Ex70; https://materiaalit.github.io/2013-oo-programming/part1/week-4/#e70; 13 Jan 2020
+
+//This is where MOOC may be starting to take off the training wheels. It gives the code for the main, but then just
+//says "create the method 'public static void combine' and a description of what that method should do.  I wonder if
+//this is a one-off or if this is what I should expect going forward.
+
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> list1 = new ArrayList<Integer>();
+        ArrayList<Integer> list2 = new ArrayList<Integer>();
+
+        list1.add(4);
+        list1.add(3);
+
+        list2.add(5);
+        list2.add(10);
+        list2.add(7);
+
+        combine(list1, list2);
+
+        System.out.println(list1); // prints [4, 3, 5, 10, 7]
+
+        System.out.println(list2); // prints [5, 10, 7]
+    }
+
+    public static void combine(ArrayList<Integer> first, ArrayList<Integer> second) {
+        first.add(second.get(0));
+        first.add(second.get(1));
+        first.add(second.get(2));
+
+        // Can accomplish the same result with first.addAll(second);
+        // This wasn't told to me until AFTER I finished the exercise.  Which is good. Variance in solutions.
+    }
+}
