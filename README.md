@@ -4,8 +4,6 @@ This repository contains very simple Java programs, escalating in complexity in 
 
 # Contents
 -Initial number is the relevant MOOC chapter; "Ex" denotes a specific prescribed exercise (if any); ends with worded description  
-    -Example: 05.1 FloatingNumberPractice; practice with floating numbers which is based on chapter 5.1 with no specific exercise  
-    -Example: 13.0 Ex38 MethodWithLoop; Exercise 38 which is found in chapter 13.0 and deals with methodsa and loops  
 -All work done with MOOC chapter 1 through 20  
 -All programs are single-class  
 
