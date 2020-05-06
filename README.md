@@ -1,6 +1,6 @@
 # MOOC-Practice-and-Exercises-1
 
-This repository contains very simple Java programs, escalating in complexity in chronological order, based on free-form practice and specific exercises with MOOC.fi, found at: https://materiaalit.github.io/2013-oo-programming/.  
+This repository contains simple Java programs, escalating in complexity in chronological order, based on free-form practice and specific exercises with MOOC.fi Java (2013 Version), found at: https://materiaalit.github.io/2013-oo-programming/.  
 
 # Contents
 -Initial number is the relevant MOOC chapter; "Ex" denotes a specific prescribed exercise (if any); ends with worded description  
